@@ -1,0 +1,12 @@
+HOST: localhost
+PORT: 8090
+
+FOLDER: ['caches', 'results']
+CACHE_FOLDER: caches
+RESULTS_FOLDER: results
+ALLOWED_EXTENSIONS: ['png', 'jpg', 'jpeg']
+
+IMG_SIZE: 640
+THRESHOLD: 0.6
+WEIGHT_PATH: weights/best3.pt
+

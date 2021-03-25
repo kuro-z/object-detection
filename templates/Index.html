@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>YOLO Tool</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/overall.css') }}" >
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/x-icon" />
+</head>
+
+<header>
+    <h1 id="title">YOLOv5 Detect Tool</h1>
+</header>
+
+<body>
+    <div class="container">
+        <div class="img-container">
+            <div class="left">
+                <div class="img-block">
+                    <img src="" id="before">
+                </div>
+                <form id="formUpload" enctype="multipart/form-data">
+                    <input type="file" name="file" id="btnFileSelect" accept="image/*,.jpg,.png,.jpeg" onchange="fileSelect(this)">
+                    <input type="button" value="检测" id="btnFileUpload">
+                </form>
+            </div>
+
+            <div class="right">
+                <div class="img-block">
+                    <img src="" id="after">
+                </div>
+            </div>
+        </div>
+
+        <div class="status-container">
+            <span>Status: </span>
+            <input type="text" id="status" value="等待选择图片..." readonly size="60">
+        </div>
+
+        <table id="result" align="center" class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Xmin</th>
+                    <th>Ymin</th>
+                    <th>Xmax</th>
+                    <th>Ymax</th>
+                    <th>Confidence</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

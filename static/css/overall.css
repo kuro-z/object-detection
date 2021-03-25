@@ -1,0 +1,104 @@
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    text-align: center;
+}
+
+#title {
+    color: #C0C0C0;
+    font-size:32px
+}
+
+.container {
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    width: 100%;
+    height: 100%
+}
+
+.img-container {
+    width: 70%;
+    height: 500px;
+    margin: auto;
+}
+
+.status-container {
+    width: 70%;
+    height: 50px;
+    margin: auto;
+}
+
+.left {
+    float: left;
+    display: inline-block;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+}
+
+.right {
+    float: right;
+    display: inline-block;
+    width: 600px;
+    height: 500px;
+    margin: auto;
+}
+
+.img-block {
+    border: 2px solid;
+    border-radius: 10px;
+    -moz-border-radius: 10px; /*old firefox*/
+    margin: auto;
+    width: 100%;
+    height: 90%;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.pure-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+}
+
+.pure-table td,.pure-table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: .5em 1em;
+}
+
+.pure-table thead {
+    background-color: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.pure-table td {
+    background-color: transparent;
+}
+
+.pure-table-horizontal td, .pure-table-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.pure-table-horizontal tbody>tr:last-child>td {
+    border-bottom-width: 0;
+}
+
